@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato - Veneno Sonoro</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function confirmarEnvio(event) {
+            alert("Seu pedido de contrato já foi enviado! Entraremos em contato em breve.");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Veneno Sonoro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="discografia.html">Discografia</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contrato.html">Contrato</a></li>
+                <li><a href="historia.html">História</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contrato</h2>
+        <p>Interessado em trabalhar com a banda Veneno Sonoro? Preencha o formulário abaixo e entraremos em contato para discutir detalhes e formalizar nosso contrato.</p>
+        
+        <form action="https://formspree.io/f/meuqplkd" method="POST" onsubmit="confirmarEnvio(event)">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Explique os detalhes da proposta"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Veneno Sonoro - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
